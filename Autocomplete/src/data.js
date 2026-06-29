@@ -1,0 +1,23 @@
+export let words = [
+    "apple", "apricot", "avocado", "acerola",
+    "banana", "blackberry", "blueberry", "boysenberry",
+    "cherry", "cranberry", "cantaloupe", "clementine",
+    "date", "damson", "dragonfruit",
+    "elderberry",
+    "fig", "feijoa",
+    "grape", "grapefruit", "guava",
+    "honeydew", "huckleberry",
+    "jackfruit",
+    "kiwi", "kumquat",
+    "lemon", "lime", "lychee", "loganberry",
+    "mango", "melon", "mulberry", "mandarin",
+    "nectarine",
+    "orange", "olive",
+    "papaya", "peach", "pear", "plum", "pineapple", "pomegranate", "passionfruit", "persimmon",
+    "quince",
+    "raspberry", "rambutan", "redcurrant",
+    "strawberry", "starfruit", "satsuma",
+    "tangerine", "tamarind",
+    "ugli fruit",
+    "watermelon"
+];

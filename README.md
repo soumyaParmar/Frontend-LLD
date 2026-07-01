@@ -31,20 +31,34 @@ A fluid, multi-column image grid that mimics Pinterest's dynamic layout and fetc
 
 ---
 
+### 3. Custom JavaScript Polyfills
+A collection of custom, spec-compliant polyfills for core JavaScript built-ins, highlighting low-level implementation details, closure patterns, and execution timing.
+
+*   **Array Prototype Methods:**
+    *   **`myforEach`:** Handles sparse arrays cleanly and binds callback execution contexts.
+    *   **`myMap`:** Allocates sparse memory upfront to preserve empty slots and maps items dynamically.
+    *   **`myFilter`:** Implements selective index checks and returns a dense array of matched elements.
+    *   **`myReduce`:** Safely detects the presence of `initialValue` (via `arguments.length`), resolves the first existing index for the accumulator if omitted, and handles empty arrays.
+*   **Asynchronous Patterns:**
+    *   **`MyPromise`:** Features full state transitions, microtask scheduling timing (`queueMicrotask`), defensive callback default fallbacks, recursive promise resolution, and robust chaining support.
+
+---
+
 ## 🚀 How to Run the Projects
 
-Each project has a local dev server configuration.
+Each project has a local dev server or script configuration.
 
 1.  Navigate to a project directory:
     ```bash
-    cd Autocomplete  # or cd PinTerest
+    cd Autocomplete  # or cd PinTerest or cd PolyFills/promises
     ```
 2.  Install development dependencies:
     ```bash
     npm install
     ```
-3.  Launch the server:
+3.  Launch the server or run script:
     ```bash
-    npm start
+    npm start  # For Autocomplete/PinTerest
+    node promises/promise.js  # For Promises Polyfill
     ```
-4.  Open the local address printed (typically `http://127.0.0.1:8080`) in your browser.
+

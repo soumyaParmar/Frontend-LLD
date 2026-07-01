@@ -31,6 +31,13 @@ export class MyPromise {
     }
   }
 
+  static resolve(val) {
+    if (val instanceof MyPromise) {
+      return val;
+    }
+    return new MyPromise((res) => res(val));
+  }
+
   then(onSuccess, onReject) {
     onSuccess = typeof onSuccess === "function" ? onSuccess : (val) => val;
     onReject =
